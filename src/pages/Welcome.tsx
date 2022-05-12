@@ -1,3 +1,4 @@
+import { Feather } from '@expo/vector-icons';
 import React from 'react';
 import { 
   SafeAreaView, 
@@ -37,7 +38,10 @@ export function Welcome() {
         activeOpacity={0.7}
       >
         <Text style={styles.buttonText}>
-          >
+          <Feather
+            name="chevron-right"
+            style={styles.buttonIcon}
+          />
         </Text>
       </TouchableOpacity>
     </SafeAreaView>
@@ -75,8 +79,8 @@ const styles = StyleSheet.create({
     height: 56,
     width: 56,
   },
-  buttonText: {
-    color: colors.white,
-    fontSize: 24
+  buttonIcon: {
+    fontSize: 32,
+    color: colors.white
   }
 });
