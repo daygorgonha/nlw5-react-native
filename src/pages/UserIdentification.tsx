@@ -1,3 +1,4 @@
+import { useNavigation } from '@react-navigation/core';
 import React, { useState } from 'react';
 import {
   StyleSheet,
@@ -19,6 +20,8 @@ export function UserIdentification(){
   const [isFilled, setIsFilled] = useState(false);
   const [name, setName] = useState<string>();
 
+  const navigation = useNavigation();
+
   function handleInputBlur() {
     setIsFocused(false);
     setIsFilled(!!name);
@@ -28,9 +31,13 @@ export function UserIdentification(){
     setIsFocused(true);
   }
 
-  function handleInputChange(value: string){
+  function handleInputChange(value: string) {
     setIsFilled(!!value);
     setName(value);
+  }
+
+  function handleSubmit(){
+    navigation.navigate('Confirmation')
   }
 
   return (
@@ -63,14 +70,17 @@ export function UserIdentification(){
                 onChangeText={handleInputChange}
               />
               <View style={styles.footer}>
-                <Button />
+                <Button 
+                  title="Confirmar" 
+                  onPress={handleSubmit}
+                />
               </View>
             </View>
           </View>
       </KeyboardAvoidingView>
     </SafeAreaView>
-      )
-    }
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
