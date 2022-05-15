@@ -10,7 +10,8 @@ export function Load(){
       <LottieView 
         source={loadAnimation}
         autoPlay
-        loop style={styles.animation}
+        loop
+        style={styles.animation}
       />
 
     </View>
