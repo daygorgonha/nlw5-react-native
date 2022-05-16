@@ -9,7 +9,8 @@ import {
   KeyboardAvoidingView,
   TouchableWithoutFeedback,
   Platform,
-  Keyboard
+  Keyboard,
+  Alert
 } from 'react-native';
 
 import { Button } from '../components/Button'
@@ -39,7 +40,10 @@ export function UserIdentification(){
   }
 
   function handleSubmit(){
-    navigation.navigate('Confirmation')
+    if(!name)
+    return Alert.alert('Me diz como chamar você 🙃');
+
+    navigation.navigate('Confirmation');
   }
 
   return (
