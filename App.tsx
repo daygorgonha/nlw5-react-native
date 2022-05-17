@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import AppLoading from 'expo-app-loading';
 import * as Notifications from 'expo-notifications';
+import * as SplashScreen from 'expo-splash-screen';
+import {LogBox} from "react-native";
 
 import Routes from './src/routes';
 import { PlantProps } from './src/libs/storage';
@@ -13,6 +15,10 @@ import {
 
 
 export default function App(){
+  LogBox.ignoreLogs([
+    "exported from 'deprecated-react-native-prop-types'.",
+  ])
+  SplashScreen.preventAutoHideAsync();
   const [ fontsLoaded ] = useFonts({
     Jost_400Regular,
     Jost_600SemiBold
@@ -38,8 +44,11 @@ export default function App(){
   //notifications();
   },[])
 
-  if(!fontsLoaded)
-    return <AppLoading />
+  if(!fontsLoaded) {
+    return null;
+  }
+  
+  SplashScreen.hideAsync();
 
   return (
     <Routes />
