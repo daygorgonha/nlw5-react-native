@@ -37,7 +37,7 @@ export function PlantSave(){
   const navigation = useNavigation();
 
   function handleChangeTime(event: DateTimePickerEvent, dateTime: Date | undefined) {
-    if(Platform.OS =='android'){
+    if(Platform.OS === 'android'){
       setShowDatePicker(oldState => !oldState);
     }
 
