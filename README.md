@@ -3,10 +3,12 @@
 <h4 align="center"> 
 	  Status: Concluido 🚀 
 </h4>
-<br>
+
+<br />
+
 <p align="center">Foi desenvolvido um aplicativo para lhe ajudar a lembrar de cuidar de suas plantas de forma fácil de acordo com cada tipo de plantinha.</p>
 
-<br>
+<br />
 
 ## Funcionalidades
 
@@ -15,7 +17,7 @@
 - Salva localmente a planta que o usuário possui;
 - Lembra o usuário quando regar e cuidar da plantinha de acordo com a frequência ideial das plantas que o usuário possui;
 
-<br>
+<br />
 
 ## Pré-requisitos
 
@@ -23,7 +25,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/). 
 Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
-<br>
+<br />
 
 ##  Tecnologias
 
@@ -38,13 +40,13 @@ As seguintes ferramentas foram usadas na construção do projeto:
   <img  src="https://img.shields.io/badge/JSON%20SERVER-black?style=for-the-badge&logo=JSON%20web%20tokens"/>
 </p>
 
-<br>
+<br />
 
 ## Layout
 
 Você pode visualizar o layout do projeto através [desse link](https://www.figma.com/file/IhQRtrOZdu3TrvkPYREzOy/PlantManager/duplicate). É necessário ter conta no [Figma](http://figma.com/) para acessá-lo.
 
-<br>
+<br />
 
 ## Executando o projeto
 
@@ -73,9 +75,10 @@ export default api;
 ---
 
 <div align="center">
-  <br>
+  <br />
   <a href="https://github.com/daygorgonha">
     <img style="border-radius: 50%;" src="https://avatars.githubusercontent.com/u/97552170?v=4" width="100px;" alt=""/>
     <br />
-    <small>Feito com ❤️ by <a href="https://www.linkedin.com/in/dayanegorgonha/">Dayane Gorgonha</a></small>
+    <small>Feito com ❤️ by <a href="https://www.linkedin.com/in/dayanegorgonha/">Dayane Gorgonha</small>
+  </a>
 </div>
